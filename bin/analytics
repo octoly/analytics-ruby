@@ -11,7 +11,7 @@ program :version, '0.0.1'
 program :description, 'scripting simulator'
 
 # use an env var for write key, instead of a flag
-Analytics = Segment::Analytics.new({
+Analytics = Octoly::Segment::Analytics.new({
   write_key: ENV['SEGMENT_WRITE_KEY'],
   on_error: Proc.new { |status, msg| print msg }
 })
