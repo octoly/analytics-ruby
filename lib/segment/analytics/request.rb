@@ -25,7 +25,7 @@ module Octoly
         @path = options[:path] || PATH
         @retries = options[:retries] || RETRIES
         @backoff_policy =
-          options[:backoff_policy] || Segment::Analytics::BackoffPolicy.new
+          options[:backoff_policy] || Octoly::Segment::Analytics::BackoffPolicy.new
 
           http = Net::HTTP.new(options[:host], options[:port])
           http.use_ssl = options[:ssl]

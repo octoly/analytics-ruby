@@ -1,5 +1,7 @@
-module Segment
-  class Analytics
-    VERSION = '2.2.6.pre'
+module Octoly
+  module Segment
+    class Analytics
+      VERSION = '2.2.6.pre'
+    end
   end
 end
