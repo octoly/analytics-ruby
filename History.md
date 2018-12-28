@@ -1,3 +1,51 @@
+Note: There is a known issue when using `2.2.5` with both `oj` and `rails` gems
+installed. Please test out `2.2.6.pre` and hold off on using `2.2.5`.
+[Details](https://github.com/segmentio/analytics-ruby/pull/166)
+
+2.2.6.pre / 2018-06-27
+==================
+
+  * [Fix](https://github.com/segmentio/analytics-ruby/pull/168): Revert 'reuse
+    TCP connections' to fix EMFILE errors
+  * [Fix](https://github.com/segmentio/analytics-ruby/pull/166): Fix oj/rails
+    conflict
+  * [Fix](https://github.com/segmentio/analytics-ruby/pull/162): Add missing
+    'Forwardable' requirement
+  * [Improvement](https://github.com/segmentio/analytics-ruby/pull/163): Better
+    logging
+
+2.2.5 / 2018-05-01
+==================
+
+  * [Fix](https://github.com/segmentio/analytics-ruby/pull/158): Require `version` module first.
+
+2.2.4 / 2018-04-30
+==================
+
+  * Promote pre-release version to stable.
+
+2.2.4.pre / 2018-02-04
+======================
+
+  * [Fix](https://github.com/segmentio/analytics-ruby/pull/147): Prevent 'batch
+    size exceeded' errors by automatically batching
+    items according to size
+  * [Performance](https://github.com/segmentio/analytics-ruby/pull/149): Reuse
+    TCP connections
+  * [Improvement](https://github.com/segmentio/analytics-ruby/pull/145): Emit logs
+    when in-memory queue is full
+  * [Improvement](https://github.com/segmentio/analytics-ruby/pull/143): Emit logs
+    when messages exceed maximum allowed size
+  * [Improvement](https://github.com/segmentio/analytics-ruby/pull/134): Add
+    exponential backoff to retries
+  * [Improvement](https://github.com/segmentio/analytics-ruby/pull/132): Handle
+    HTTP status code failure appropriately
+
+2.2.3.pre / 2017-09-14
+==================
+
+  * [Fix](https://github.com/segmentio/analytics-ruby/pull/120): Override `respond_to_missing` instead of `respond_to?` to facilitate mock the library in tests.
+
 
 2.2.2 / 2016-08-03
 ==================
